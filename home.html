@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webweb</title>
+    <title>Website Travel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hihi</h1>
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar scroll</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Links
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item"> >   Electronic</a></li> 
+              <li><a class="dropdown-item" href="#"> Gaming Console</a></li>
+              <li><a class="dropdown-item" href="#"> AC</a></li>
+              <li><a class="dropdown-item" href="#"> Washing Mechine</a></li>
+              <li><a class="dropdown-item" href="#"> TV & accessories</a></li>
+                <li><hr class="dropdown-divider"></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPopup()">Switch</a>
+          </li>
+          <li>
+            <a href="login.html"><button class="btn btn-outline-primary">Log In</button></a>
+          </li>
+          <li>
+            <button class="btn btn-primary" style="margin-left: 10px;">Sign Up</button>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <br>
+
 </body>
 </html>
