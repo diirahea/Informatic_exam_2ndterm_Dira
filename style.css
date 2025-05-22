@@ -52,8 +52,14 @@
   body {
   font-family: Arial, sans-serif;
 }
-.carousel-inner img {
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-}
+    .carousel-inner img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    }
+    .navbar ul {
+    padding: 25px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    }  
