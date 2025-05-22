@@ -57,9 +57,17 @@
     object-fit: cover;
     border-radius: 10px;
     }
+    .carousel {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
     .navbar ul {
     padding: 25px 20px;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
-    }  
+    } 
+    html {
+      scroll-behavior: smooth;
+    }
