@@ -8,6 +8,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="p-4">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar" style="background-color: rgb(255, 255, 255);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+            <img src="img/cattss.jpg" alt="Logo" width="95">
+          </a>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#History">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Stays">Stays</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Visit">Visit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Guide">Guide</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
   <div class="container">
     <h2>Select a date</h2>
     <p class="text-muted">All prices are in EUR (€)</p>
@@ -52,28 +79,60 @@
     <h4>What do you prefer? <span class="badge bg-warning text-dark"> 📍 Here</span></h4>
 
     <div class="row mt-3">
-      <div class="col-md-6">
-        <div class="ticket-option selected">
-          <h5>Castel Sant'Angelo Tickets + Audio Guide</h5>
-          <p><strong>€16</strong></p>
-          <button class="btn btn-outline-primary w-100" disabled>✔ Selected</button>
-          <ul class="mt-2">
-            <li>Skip the ticket lines to explore the fortress, its medieval rooms, prisons, and terrace—with an audio guide revealing centuries of imperial and papal history</li>
-            <li>Digital audio guide available</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="ticket-option">
-          <h5>Entry Tickets + Passetto di Borgo Access</h5>
-          <p class="text-muted">Sold Out</p>
-          <button class="btn btn-outline-secondary w-100" disabled>Not available</button>
-          <ul class="mt-2">
-            <li>Walk the secret corridor, known for clandestine meetings and papal escapades, and leisurely explore the castle's panoramic terrace and medieval apartments</li>
-          </ul>
-        </div>
-      </div>
+  <div class="col-md-6 d-flex">
+    <div class="ticket-option selected w-100">
+      <h5>Castel Sant'Angelo Tickets + Audio Guide</h5>
+      <p><strong>€16</strong></p>
+      <button class="btn btn-outline-primary w-100" disabled>✔ Selected</button>
+      <ul class="mt-2">
+        <li>Skip the ticket lines to explore the fortress, its medieval rooms, prisons, and terrace—with an audio guide revealing centuries of imperial and papal history</li>
+        <li>Digital audio guide available</li>
+      </ul>
     </div>
   </div>
+  <div class="col-md-6 d-flex">
+    <div class="ticket-option w-100">
+      <h5>Entry Tickets + Passetto di Borgo Access</h5>
+      <p class="text-muted">Sold Out</p>
+      <button class="btn btn-outline-secondary w-100" disabled>Not available</button>
+      <ul class="mt-2">
+        <li>Walk the secret corridor, known for clandestine meetings and papal escapades, and leisurely explore the castle's panoramic terrace and medieval apartments</li>
+      </ul>
+    </div>
+  </div>
+  <br> <br>
+
+  <h2>Pick a time</h2>
+
+  <div class="card">
+    <div class="ticket-info">Castel Sant'Angelo Tickets + Audio Guide</div>
+    <div class="ticket-date">Sat, May 24</div>
+
+    <div class="selection-container">
+      <select id="time-slot">
+        <option value="">Select a time slot</option>
+        <option value="10:00">10:00 AM</option>
+        <option value="11:00">11:00 AM</option>
+        <option value="12:00">12:00 PM</option>
+        <option value="13:00">1:00 PM</option>
+        <option value="14:00">2:00 PM</option>
+        <option value="15:00">3:00 PM</option>
+      </select>
+
+      <button class="next-button" onclick="handleNext()">Next</button>
+    </div>
+  </div>
+
+  <script>
+    function handleNext() {
+      const selectedTime = document.getElementById('time-slot').value;
+      if (!selectedTime) {
+        alert('Please select a time slot.');
+      } else {
+        alert('Selected time slot: ' + selectedTime);
+      }
+    }
+  </script>
+
 </body>
 </html>
