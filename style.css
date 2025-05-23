@@ -75,3 +75,19 @@
       cursor: pointer;
       transition: transform 0.2s ease-in-out;
     }
+    .stay-card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.stay-card .card-body {
+  padding: 0.75rem;
+}
+
+.stay-card .card-title {
+  font-size: 1rem;
+}
+
+.stay-card .card-text {
+  font-size: 0.85rem;
+}
