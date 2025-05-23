@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select a Date</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-4">
+  <div class="container">
+    <h2>Select a date</h2>
+    <p class="text-muted">All prices are in EUR (€)</p>
+    <div class="d-flex gap-3 flex-wrap mb-4">
+      <div class="date-card selected">
+        <div class="fw-bold">SAT</div>
+        <div>May 24</div>
+        <div>€16</div>
+      </div>
+      <div class="date-card">
+        <div class="fw-bold">SUN</div>
+        <div>May 25</div>
+        <div>€16</div>
+      </div>
+      <div class="date-card">
+        <div class="fw-bold">MON</div>
+        <div>May 26</div>
+        <div>-</div>
+      </div>
+      <div class="date-card">
+        <div class="fw-bold">TUE</div>
+        <div>May 27</div>
+        <div>€16</div>
+      </div>
+      <div class="date-card">
+        <div class="fw-bold">WED</div>
+        <div>May 28</div>
+        <div>€16</div>
+      </div>
+      <div class="date-card">
+        <div class="fw-bold">THU</div>
+        <div>May 29</div>
+        <div>€16</div>
+      </div>
+      <div class="date-card">
+        <div class="fw-bold">FRI</div>
+        <div>May 30</div>
+        <div>€16</div>
+      </div>
+    </div>
+
+    <h4>What do you prefer? <span class="badge bg-warning text-dark"> 📍 Here</span></h4>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="ticket-option selected">
+          <h5>Castel Sant'Angelo Tickets + Audio Guide</h5>
+          <p><strong>€16</strong></p>
+          <button class="btn btn-outline-primary w-100" disabled>✔ Selected</button>
+          <ul class="mt-2">
+            <li>Skip the ticket lines to explore the fortress, its medieval rooms, prisons, and terrace—with an audio guide revealing centuries of imperial and papal history</li>
+            <li>Digital audio guide available</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="ticket-option">
+          <h5>Entry Tickets + Passetto di Borgo Access</h5>
+          <p class="text-muted">Sold Out</p>
+          <button class="btn btn-outline-secondary w-100" disabled>Not available</button>
+          <ul class="mt-2">
+            <li>Walk the secret corridor, known for clandestine meetings and papal escapades, and leisurely explore the castle's panoramic terrace and medieval apartments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

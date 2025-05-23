@@ -91,3 +91,33 @@
 .stay-card .card-text {
   font-size: 0.85rem;
 }
+    .date-card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      text-align: center;
+      padding: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .date-card:hover {
+      background-color: #b280ff;
+      color: white;
+    }
+
+    .selected {
+      background-color: #e0bbff;
+      border-color: #b280ff;
+    }
+
+    .ticket-option {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .ticket-option.selected {
+      border-color: #b280ff;
+      background-color: #f3e5ff;
+    }
