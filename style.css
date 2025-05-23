@@ -68,10 +68,6 @@
     html {
       scroll-behavior: smooth;
     }
-    .card {
-      cursor: pointer;
-      transition: transform 0.2s ease-in-out;
-    }
     .stay-card img {
   height: 150px;
   object-fit: cover;
@@ -142,6 +138,8 @@
       padding: 24px 32px;
       max-width: 900px;
       margin-top: 24px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
     }
 
     .ticket-info {
