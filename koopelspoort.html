@@ -10,6 +10,33 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #f9f9f9;
       color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      max-width: 1200px;
+    }
+    .box {
+      max-width: 600px;
+    }
+    .h1 {
+      font-size: 5em;
+      padding-top: 20%;
+    }
+    .p {
+      font-size: 1.2em;
+    }
+    .iframe {
+      border-radius: 2em;
+      border: 5px solid rgb(243, 204, 211);
+      width: 500px;
+      height: 400px;
+      transition: 0.3s ease-in-out;
+    }
+    .iframe:hover {
+      transform: scale(1.05);
+      opacity: 1;
     }
     .rating-stars {
       color: #4CAF50;
@@ -128,9 +155,25 @@
       </div>
     </div>
   </div>
+<br>
+  <hr class="section-divider">
+  <!-- Location Section -->
+  <div class="row mt-5 align-items-center">
+    <div class="col-md-6">
+      <h1>The Location</h1>
+      <p>Based on the location, you may see what may be around Kopplespoort</p>
+    </div>
+    <div class="col-md-6">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.6443596876857!2d5.385237!3d52.1589771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c646a18f470565%3A0x8ec0879bcff555a8!2sKoppelpoort!5e0!3m2!1sen!2sid!4v1748277659916!5m2!1sen!2sid" 
+        class="iframe"
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
 
-  <!-- Map Section -->
-  <img src="Screenshot 2025-05-24 223136.png" alt="Map of the area" class="map-image">
 </div>
 
 </body>
