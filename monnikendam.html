@@ -1,11 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Koppelpoort – Amersfoort</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      max-width: 1200px;
+    }
+    .box {
+      max-width: 600px;
+    }
+    .h1 {
+      font-size: 5em;
+      padding-top: 20%;
+    }
+    .p {
+      font-size: 1.2em;
+    }
+    .iframe {
+      border-radius: 2em;
+      border: 5px solid rgb(243, 204, 211);
+      width: 500px;
+      height: 400px;
+      transition: 0.3s ease-in-out;
+    }
+    .iframe:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    .rating-stars {
+      color: #4CAF50;
+      font-size: 1.2rem;
+    }
+    .section-divider {
+      border: none;
+      height: 2px;
+      background-color: #ccc;
+      margin: 3rem 0;
+    }
+    .img-thumb {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .subsection-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .nearby-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .nearby-item img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-right: 1rem;
+    }
+    .map-image {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-    
+
+<div class="container py-5">
+  <!-- Header -->
+  <h1 class="mb-2">Koppelpoort</h1>
+  <div class="d-flex align-items-center mb-4">
+    <div class="rating-stars me-2">4.5 ★★★★★</div>
+    <a href="#" class="text-decoration-none">(379 reviews)</a>
+    <span class="ms-3 text-muted">#2 of 93 things to do in Amersfoort</span>
+  </div>
+
+  <!-- Main image -->
+  <img src="img/amam.webp" alt="Koppelpoort main view" class="img-fluid img-thumb mb-4">
+
+  <!-- Description -->
+  <h4>About</h4>
+  <p>The Koppelpoort is a city gate in Amersfoort. It is a combination of land and water gate. The name is probably derived from the East Middle Dutch word <em>Koppel</em> meaning meadow.</p>
+  <p><strong>Duration:</strong> Less than 1 hour</p>
+
+  <hr class="section-divider">
+
+  <!-- Nearby section -->
+  <div class="row">
+    <div class="col-md-6">
+      <h4 class="subsection-title">Best Nearby Restaurants</h4>
+      <div class="nearby-item">
+        <img src="img/dara.jpeg" alt="Dara">
+        <div>
+          <strong>Dara Amersfoort</strong><br>
+          ⭐ 4.1 · Seafood, Mediterranean<br>
+          359 ft · $$–$$$
+        </div>
+      </div>
+      <div class="nearby-item">
+        <img src="img/Iedereen.jpg" alt="Voor Iedereen">
+        <div>
+          <strong>Restaurant Voor Iedereen</strong><br>
+          ⭐ 4.5 · Dutch, Seafood<br>
+          0.2 mi · $$–$$$
+        </div>
+      </div>
+      <div class="nearby-item">
+        <img src="img/hetekoleen.jpg" alt="Hete Kolen">
+        <div>
+          <strong>Hete Kolen</strong><br>
+          ⭐ 4.5 · Dutch, Barbecue<br>
+          0.3 mi · $$–$$$
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <h4 class="subsection-title">Top Attractions Nearby</h4>
+      <div class="nearby-item">
+        <img src="img/muurhuizen.jpg" alt="Muurhuizen">
+        <div>
+          <strong>Muurhuizen</strong><br>
+          ⭐ 4.5 · Historic Sites<br>
+          0.4 mi
+        </div>
+      </div>
+      <div class="nearby-item">
+        <img src="img/stads.jpg" alt="Brewery">
+        <div>
+          <strong>Stadsbrouwerij De Drie Ringen</strong><br>
+          ⭐ 4.4 · Brewery<br>
+          190 ft
+        </div>
+      </div>
+      <div class="nearby-item">
+        <img src="img/onze.jpg" alt="Tower">
+        <div>
+          <strong>Onze-Lieve-Vrouwetoren</strong><br>
+          ⭐ 4.4 · Landmarks<br>
+          0.3 mi
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+  <hr class="section-divider">
+  <!-- Location Section -->
+  <div class="row mt-5 align-items-center">
+    <div class="col-md-6">
+      <h1>The Location</h1>
+      <p>Based on the location, you may see what may be around Kopplespoort</p>
+    </div>
+    <div class="col-md-6">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.6443596876857!2d5.385237!3d52.1589771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c646a18f470565%3A0x8ec0879bcff555a8!2sKoppelpoort!5e0!3m2!1sen!2sid!4v1748277659916!5m2!1sen!2sid" 
+        class="iframe"
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+</div>
+
 </body>
 </html>
