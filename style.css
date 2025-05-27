@@ -1,7 +1,8 @@
   .navbar {
-    background-color: #ffffff;
+    background:linear-gradient(to right, rgb(255, 223, 223), rgb(255, 255, 255));
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     padding: 12px 24px;
+    border-radius: 1em;
   }
 
   .navbar-brand {
@@ -72,7 +73,10 @@
   height: 150px;
   object-fit: cover;
 }
-
+a:hover {
+  color: #ffcbec;
+  text-decoration: underline;
+}
 .stay-card .card-body {
   padding: 0.75rem;
 }
@@ -85,7 +89,7 @@
   font-size: 0.85rem;
 }
     .date-card {
-      border: 1px solid #ddd;
+      border: 1px solid #828282;
       border-radius: 12px;
       text-align: center;
       padding: 1rem;
@@ -94,17 +98,17 @@
     }
 
     .date-card:hover {
-      background-color: #b280ff;
+      background-color: #dfbccf;
       color: white;
     }
 
     .selected {
-      background-color: #e0bbff;
-      border-color: #b280ff;
+      background-color: #e0bfd0;
+      border-color: #e0a7c7;
     }
 
   .ticket-option {
-    border: 1px solid #ddd;
+    border: 1px solid #f7a9cd;
     border-radius: 12px;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -115,16 +119,43 @@
   }
 
     .ticket-option.selected {
-      border-color: #b280ff;
-      background-color: #f3e5ff;
+      border-color: #676767;
+      background-color: #ffeff9;
     }
-        body {
-      font-family: Arial, sans-serif;
-      padding: 40px 80px;
-      background-color: #f9f9f9;
-      color: #000;
-    }
+.History {
+  background-color: #fddcdc;
+  width: 100vw;                 /* Full viewport width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;           /* Force section to the full screen */
+  margin-right: -50vw;
+  padding: 2rem 1rem;
+}
 
+.History .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;                   /* Keep content centered */
+  background-color: transparent;
+}
+
+
+    .Visit {
+      background-color: #ffffff;
+    }
+    .Guide {
+      background-color:rgb(232, 203, 212);
+    }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 223, 223));
+  color: #000;
+}
+
+    .his
     h2 {
       font-size: 28px;
       margin: 40px 0 20px;
@@ -171,7 +202,7 @@
 
     .next-button {
       padding: 12px 32px;
-      background-color: #8000ff;
+      background-color: #dfa7c2;
       color: white;
       border: none;
       border-radius: 8px;
@@ -182,7 +213,7 @@
     }
 
     .next-button:hover {
-      background-color: #6900d1;
+      background-color: #d10099;
     }
 
     /* Spacing Consistency */

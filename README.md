@@ -18,4 +18,4 @@
                         
     * Places to visit :: this section is about some places to be visit in Amersfoort. The places themselves are shown in cards. Inside the cards, There's the picture of the recomended places
                         short description, and a button "visit!" that will leads you to a different pages of the location. The pages that linked, shows different names of location, description,
-                        best restaurant nearby, review, pictures, street name, and lastly the Google map of hte location.
+                        best restaurant nearby, review, pictures, street name, and lastly the Google map of hte location. Each different button will leads you to different pages of location too. And the Google Map is interactable, which you can zoom in or out the map and hold and drag the map.
