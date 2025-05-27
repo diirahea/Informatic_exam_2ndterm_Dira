@@ -2,7 +2,7 @@
     background:linear-gradient(to right, rgb(255, 223, 223), rgb(255, 255, 255));
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     padding: 12px 24px;
-    border-radius: 1em;
+    border-radius: 0em;
   }
 
   .navbar-brand {
@@ -145,7 +145,7 @@ a:hover {
       background-color: #ffffff;
     }
     .Guide {
-      background-color:rgb(232, 203, 212);
+      background-color:#fddcdc;
     }
 body {
   padding: 0;
@@ -220,3 +220,69 @@ body {
     .section {
       margin-bottom: 48px;
     }
+    .site-footer {
+  background:#ffffff;
+  padding: 40px 20px 20px;
+  color: #333;
+  font-size: 0.95rem;
+  border-top: 2px solid #f3c0d2;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left h3 {
+  font-size: 1.4rem;
+  color: #fa9c9c;
+}
+
+.footer-left p {
+  margin-top: 8px;
+  color: #555;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #d10099;
+  text-decoration: underline;
+}
+
+.footer-social a {
+  margin-right: 12px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img {
+  filter: brightness(0.2);
+  transition: filter 0.3s ease;
+}
+
+.footer-social a:hover img {
+  filter: brightness(0) saturate(100%) invert(41%) sepia(98%) saturate(800%) hue-rotate(270deg) brightness(95%) contrast(90%);
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+  font-size: 0.85rem;
+}
